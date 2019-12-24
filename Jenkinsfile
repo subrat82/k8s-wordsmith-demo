@@ -17,7 +17,7 @@ node{
       //withDockerRegistry([credentialsId: "${Creds}", url: 'https://index.docker.io/v1/']) {
      // withDockerRegistry([credentialsId: "076eed1a-ddda-4fcc-b8bd-5fbf6fa738fd", url: 'https://index.docker.io/v1/']) {
      // sh "/usr/local/bin/docker build -t ${ImageName}:${ImageTag} ."
-      sh "docker-compose build"
+      sh "/usr/local/bin/docker-compose build"
       sh "echo build successfully"
      // sh "/usr/local/bin/docker push ${ImageName}"
        //}
