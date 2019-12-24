@@ -20,7 +20,7 @@ node{
       sh "docker-compose build"
       sh "echo build successfully"
      // sh "/usr/local/bin/docker push ${ImageName}"
-       }
+       //}
 
     }
 }
